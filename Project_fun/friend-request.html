@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Would You Be My Friend?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="friend">
+<script>window.PARTICLE_EMOJIS=['💛','✨','🤝','🌟','🎈'];</script>
+<div id="particles"></div>
+<div id="cursor-glow"></div>
+<canvas id="fx-canvas"></canvas>
+<canvas id="confetti-canvas"></canvas>
+
+<nav class="site-nav">
+  <div class="nav-logo">
+    <img src="https://img.icons8.com/fluency/48/infinity.png" alt="Friends Forever">
+    <span>Friends Forever</span>
+</div>
+  <div class="nav-links">
+    <a href="index.html">Welcome</a>
+    <a href="story.html">Story</a>
+    <a href="roast.html">Roast</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="memory-wall.html">Memories</a>
+    <a href="flip-cards.html">Flip Cards</a>
+    <a href="challenge.html">Challenge</a>
+    <a href="letter.html">Letter</a>
+    <a href="promises.html">Promises</a>
+    <a href="finale.html">Finale</a>
+    <a href="friend-request.html">Friend?</a>
+  </div>
+</nav>
+
+<main>
+  <section class="page">
+    <div class="eyebrow reveal">🌟 the very last thing 🌟</div>
+    <h2 class="section-title reveal">Would You Be My Friend?</h2>
+    <p class="section-sub reveal">One last, very important question before you go. (Only one button here actually works.)</p>
+
+    <div class="sticker-field">
+      <span class="sticker bounce" style="left:4%; top:-10px; --rot:-10deg;">🎈</span>
+      <span class="sticker spin" style="right:6%; top:0px; --rot:0deg;">✨</span>
+      <span class="sticker bounce" style="left:12%; top:80px; --rot:8deg; animation-delay:0.4s;">🤝</span>
+      <span class="sticker spin" style="right:12%; top:90px; animation-delay:0.6s;">🌟</span>
+      <span class="sticker bounce" style="left:2%; top:180px; --rot:-6deg; animation-delay:0.9s;">💛</span>
+      <span class="sticker spin" style="right:3%; top:190px; animation-delay:1.1s;">🎊</span>
+    </div>
+
+    <div class="glass friend-stage" id="friendStage" style="padding:34px 20px;">
+      <div class="friend-btns" id="friendBtns">
+        <button class="btn" id="yesBtn">Yes 🤝</button>
+        <button class="btn ghost" id="noBtn">No</button>
+      </div>
+      <p class="dodge-msg" id="dodgeMsg"></p>
+
+      <div class="yes-celebration" id="yesCelebration">
+        <div style="font-size:3rem;">🎉🤝🎉</div>
+        <h3 style="font-size:1.8rem;">Yay! Best friends, officially. ❤️</h3>
+        <p style="color:var(--ink-dim); max-width:420px;">Knew you'd pick the right one. There was never really another option.</p>
+        <a class="btn alt" href="index.html">Back to the start 🏡</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">made with love (and a little chaos) — by Suyog</footer>
+<script src="script.js"></script>
+</body>
+</html>
